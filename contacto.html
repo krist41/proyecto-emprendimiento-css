@@ -28,31 +28,23 @@
         Contáctanos a nosotros respondimos ligerito
     </div>
     <div class="card-body">
-            <form>
-    <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Nombre Completo</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    </div>
-    <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Correo</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
-    </div>
-    <div class="mb-3">
-        <label class="form-label">Telefono</label>
-        <input type="text" class="form-control" id="telefonoUser">
-    </div>
+        <form name="myForm" action="index.html" onsubmit="return validateForm()" method="post" required>
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" name="nombre">
+            </div>
+            <div class="mb-3">
+                <label for="correo" class="form-label">Correo electrónico:</label>
+                <input type="email" class="form-control" id="correo" name="correo">
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje:</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="4"></textarea>
+            </div>
 
-    <div class="mb-3">
-    <h2>Motivo de contacto:</h2>
-    <textarea></textarea>
+            <button type="submit" class="btn btn-primary w-100">Enviar</button>
+        </form>
     </div>
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Acepto los Termino y Condiciones</label>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-
     </div>
     </div>
 

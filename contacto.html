@@ -30,14 +30,14 @@
         </div>
     
     <div class="card-body">
-        <form name="myForm" action="index.html" onsubmit="return validateForm()" method="post" required>
+        <form name="myForm" action="index.html" onsubmit="return validateForm(),validateEmail(correo)" method="post" required>
             <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre:</label>
                 <input type="text" class="form-control" id="nombre" name="nombre">
             </div>
             <div class="mb-3">
                 <label for="correo" class="form-label">Correo electrónico:</label>
-                <input type="email" class="form-control" id="correo" name="correo">
+                <input type="text" class="form-control" id="correo" name="correo">
             </div>
             <div class="mb-3">
                 <label for="mensaje" class="form-label">Mensaje:</label>

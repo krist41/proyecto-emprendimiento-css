@@ -17,3 +17,23 @@ function validateForm() {
 
   
 } 
+function validateEmail(correo) {
+
+ const regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+if (correo != regex) {
+    alert("El correo no es valido");
+    return false;
+  } 
+
+}
+function validateNombre(nombre) {
+
+ const rege = /^[a-zA-Z]$/;
+if (nombre != rege) {
+    alert("El nombre no es valido");
+    return false;
+  } 
+
+}
+
+
